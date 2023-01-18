@@ -1,6 +1,7 @@
 // Select the element where the header should be inserted
   const headerContainer = document.querySelector('#_head');
 
+  headerContainer.innerHTMl = "";
   // Use fetch to get the HTML content of the head file
   fetch('partials/head.html')
     .then(response => response.text())
