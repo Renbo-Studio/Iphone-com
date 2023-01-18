@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head id="_head"></head>
+  <body>
+    <div class="container-scroller">
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo" href="index.html"><img src="assets/images/3.png" class="obj-fit" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/3.png" alt="logo" /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <div class="search-field d-none d-xl-block">
+            <form class="d-flex align-items-center h-100" action="#">
+              <div class="input-group">
+                <div class="input-group-prepend bg-transparent">
+                  <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                </div>
+              </div>
+            </form>
+          </div>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item nav-profile">
+              <a class="nav-link" href="#" aria-expanded="false">
+                <div class="nav-profile-img">
+                  <img src="assets/images/3.png" class="obj-fit" alt="image">
+                </div>
+                <div class="nav-profile-text">
+                  <p class="mb-1 text-back">Admin</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <div class="container-fluid page-body-wrapper">
+      <!--!!! Sidebar Section !!!-->
+      <div id="_sidebar"></div>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="d-xl-flex justify-content-between align-items-start">
+              <h2 class="text-dark font-weight-bold mb-2"> store dashboard </h2>
+            </div>
+            <div class="row">
+              <div class="d-sm-flex justify-content-between align-items-center transaparent-tab-border {">
+                <ul class="nav nav-tabs tab-transparent" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="create-tab" data-bs-toggle="tab" href="#create" role="tab" aria-selected="true">Post Item</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="edit-tab" data-bs-toggle="tab" href="#edit" role="tab" aria-selected="false">Edit/Delete Item</a>
+                  </li>
+                </ul>
+                <div class="d-md-block d-none">
+                  <a href="#" class="text-light p-1"><i class="mdi mdi-view-dashboard"></i></a>
+                  <a href="#" class="text-light p-1"><i class="mdi mdi-dots-vertical"></i></a>
+                </div>
+              </div>
+              <div class="col-md-12">
+                  <div class="tab-content tab-transparent-content">
+                    <div class="tab-pane fade show active" id="create" role="tabpanel" aria-labelledby="create-tab">
+                      <div class="row">
+                          <div class="col-lg-8 col-sm-12 col-md-6">
+                            <form action="#!" class="job-form">
+                              <div class="row">
+                                <div class="col-4"><span> Name</span><input type="text" name="" placeholder="IPhone 13 Pro Max" id="company-name" class="job-title"></div>
+                                <div class="col-4"><span> Price</span><input type="number" min="1" placeholder="₦54,170" name="" id="company-location" class="job-title inputx-price"></div>
+                                <div class="col-4"><span>Image(s)</span><input class="btnP job-title" type="file" multiple="multiple" accept="image/*"  id="choose-file"></div> 
+                              </div>
+                              <div class="row"><span class="text-gray">Company Info <br><br></span>
+                                <div class="col-8"><span>Title</span><input type="text" placeholder="Cheapest IPhone 13 Max, 8GB Ram 1TB Rom" id="job-title" class="job-title inputx"></div>
+                                <div class="col-4"><span> Tags</span><input type="text" placeholder="Free Shipping, Best Seller" onkeydown="checkEnter(event)" id="inputField" class="job-title">
+                                <div class="gray-bg" id="list"><br>
+                                  <p class="re3">Free Shipping</p>
+                                  <p class="re3">Best Seller</p>
+                                  <p class="re3">New</p>
+                                </div>
+                              </div>
+                              </div><br>
+                              <div>
+                                <span>Item Description</span><br>
+                                <textarea name="" class="job-disc inputx" placeholder='The iPhone 13 Pro Max is the ultimate power users phone with a 6.7" display, triple-camera system, A15 Bionic chip, 5G, Ceramic Shield front cover, and up to 1TB storage. Water and dust resistant.' id="" cols="30" rows="10"></textarea>
+                              </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-md-6">
+                            <div class="job-body text-black">
+                              <div class="job-content">
+                                <div class="row">
+                                  <img src="assets/images/3.png" id="person" style="height: 230px;width: 100%;object-fit: cover;object-position: center;" alt="image">
+                                  <p class="job-display-title outputx" id="display-title">Apple iPhone 13 Pro Max: The Ultimate Power User's Smartphone</p>
+                                </div>
+                                <div class="outputx-price price">
+                                  <span>₦</span> 54,170
+                                </div>
+                                <div class="job-btn"><button class="btn">Add To Cart</button></div>
+                              </div>                                                  
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade show overflow-auto" id="edit" role="tabpanel" aria-labelledby="edit-tab">
+                    <table>
+                      <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Title</th>
+                        <th>Actions</th>
+                      </tr>
+                      <tr>
+                        <td>TikTok</td>
+                        <td>₦8,729,100</td>
+                        <td>Sr. Userexperience Designer</td>
+                        <td><button class="btn btn-primary modalxt">Edit</button>&ThickSpace;<button onclick="goOn()" class="bg-danger btn btn-primary">Delete</button></td>
+                      </tr>
+                      <tr>
+                        <td>TikTok</td>
+                        <td>₦190,021</td>
+                        <td>Sr. Userexperience Designer</td>
+                        <td><button class="btn btn-primary modalxt">Edit</button>&ThickSpace;<button onclick="goOn()" class="bg-danger btn btn-primary">Delete</button></td>
+                      </tr>
+                      <tr>
+                        <td>TikTok</td>
+                        <td>₦69,876,400</td>
+                        <td>Sr. Userexperience Designer</td>
+                        <td><button class="btn btn-primary modalxt">Edit</button>&ThickSpace;<button onclick="goOn()" class="bg-danger btn btn-primary">Delete</button></td>
+                      </tr>
+                      <tr>
+                        <td>TikTok</td>
+                        <td>00,676</td>
+                        <td>Sr. Userexperience Designer</td>
+                        <td><button class="btn btn-primary modalxt">Edit</button></a>&ThickSpace;<button onclick="goOn()" class="bg-danger btn btn-primary">Delete</button></td>
+                      </tr>
+                    </table><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The modal container element -->
+    <div id="modalx" class="modalx">
+      <!-- The modal content element -->
+      <div class="modal-contentx">
+        <!-- The modal body --> <br>
+        <div class="modal-bodyx">
+          <form action="#!" class="job-form">
+            <div class="row">
+              <div class="col-4"><span> Name</span><input type="text" name="" placeholder="IPhone 13 Pro Max" id="company-name" class="job-title"></div>
+              <div class="col-4"><span> Price</span><input type="number" min="1" placeholder="₦54,170" name="" id="company-location" class="job-title inputx-price"></div>
+              <div class="col-4"><span>Image(s)</span><input class="btnP job-title" type="file" multiple="multiple" accept="image/*"  id="choose-file"></div> 
+            </div>
+            <div class="row"><span class="text-gray">Company Info <br><br></span>
+              <div class="col-8"><span>Title</span><input type="text" placeholder="Cheapest IPhone 13 Max, 8GB Ram 1TB Rom" id="job-title" class="job-title inputx"></div>
+              <div class="col-4"><span> Tags</span><input type="text" placeholder="Free Shipping, Best Seller" onkeydown="checkEnter(event)" id="inputField" class="job-title">
+              <div class="gray-bg" id="list"><br>
+                <p class="re3">Free Shipping</p>
+                <p class="re3">Best Seller</p>
+                <p class="re3">New</p>
+              </div>
+            </div>
+            </div><br>
+            <div>
+              <span>Item Description</span><br>
+              <textarea name="" class="job-disc inputx" placeholder='The iPhone 13 Pro Max is the ultimate power users phone with a 6.7" display, triple-camera system, A15 Bionic chip, 5G, Ceramic Shield front cover, and up to 1TB storage. Water and dust resistant.' id="" cols="30" rows="10"></textarea>
+            </div>
+          </form>
+        </div><br>
+        <!-- The modal footer -->
+        <div class="modal-footerx">
+          <button class="btn btn-primary">Done</button>
+          <button class="btn btn-primary bg-danger" id="closex">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/js/circle-progress.min.js"></script>
+    <script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+  </body>
+</html>

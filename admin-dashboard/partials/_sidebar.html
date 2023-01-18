@@ -1,0 +1,89 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+  <ul class="nav">
+    <li class="nav-item nav-category">Main</li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">
+        <span class="icon-bg"><i class="mdi mdi-cube menu-icon"></i></span>
+        <span class="menu-title">Dashboard</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="payments.html">
+        <span class="icon-bg"><i class="mdi mdi-cash menu-icon"></i></span>
+        <span class="menu-title">Payments</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+        <span class="icon-bg"><i class="mdi mdi-briefcase menu-icon"></i></span>
+        <span class="menu-title">Store</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="auth">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="store.html"> Add Item </a></li>
+          <li class="nav-item"> <a class="nav-link" href="store.html"> Edit Item </a></li>
+          <li class="nav-item"> <a class="nav-link" href="store.html"> Delete Item </a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="users.html">
+        <span class="icon-bg"><i class="mdi mdi-account menu-icon"></i></span>
+        <span class="menu-title">Users</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#blog" aria-expanded="false" aria-controls="blog">
+        <span class="icon-bg"><i class="mdi mdi-blogger menu-icon"></i></span>
+        <span class="menu-title">Blogs</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="blog">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="blog.html"> Create Blog </a></li>
+          <li class="nav-item"> <a class="nav-link" href="blog.html"> Edit Blog </a></li>
+          <li class="nav-item"> <a class="nav-link" href="blog.html"> Delete Blog </a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#!mail">
+        <span class="icon-bg"><i class="mdi mdi-mail menu-icon"></i></span>
+        <span class="menu-title">Mail</span>
+      </a>
+    </li>
+    <li class="nav-item sidebar-user-actions">
+      <div class="user-details">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <div class="d-flex align-items-center">
+              <div class="nav-link">
+                <span class="icon-bg"><i class="mdi mdi-laptop menu-icon"></i></span>
+              </div>
+              <div class="sidebar-profile-text">
+                <p class="mb-1">Admin</p>
+              </div>
+            </div>
+          </div>
+          <div class="badge badge-danger">+99</div>
+        </div>
+      </div>
+    </li>
+    <div class="align-down">
+      <li class="nav-item sidebar-user-actions">
+        <div class="sidebar-user-menu">
+          <a href="#" class="nav-link"><i class="mdi mdi-settings menu-icon"></i>
+            <span class="menu-title">Settings</span>
+          </a>
+        </div>
+      </li>
+      <li class="nav-item sidebar-user-actions">
+        <div class="sidebar-user-menu">
+          <a href="#" class="nav-link"><i class="mdi mdi-logout menu-icon"></i>
+            <span class="menu-title">Log Out</span></a>
+        </div>
+      </li>
+    </div>
+  </ul>
+</nav>
