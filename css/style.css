@@ -282,6 +282,12 @@ a:focus {
   text-transform: uppercase;
 }
 
+.btn-block
+{
+  background-color: #24d278;
+  width: 100%;
+}
+
 .slider_section .detail-box h1 span {
   font-size: 3rem;
   color: #252525;
